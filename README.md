@@ -9,7 +9,6 @@ A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu*
 - **WireGuard**
 - **Node.js** and **NPM**
 - **PostgreSQL**
-- **NodeExporter** (Monitoring)
 - **Shell Scripts** and additional **Linux packages**
 
 <br /><br />
