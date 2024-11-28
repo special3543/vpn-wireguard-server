@@ -47,10 +47,12 @@ You can either use **Ansible** for remote installation and multi-server manageme
 Run the following commands in order:
 
 ```bash
-sudo bash /home/ubuntu/vpn-wireguard-server/iptables-blist/iptables-setup.sh
-sudo bash /home/ubuntu/vpn-wireguard-server/wireguard/wireguard-setup.sh
-sudo bash /home/ubuntu/vpn-wireguard-server/stats/stats-setup.sh
-sudo bash /home/ubuntu/vpn-wireguard-server/api/api-postgre-setup.sh
+git clone https://github.com/special3543/vpn-wireguard-server.git
+cd 'path-to-repolocal' 
+sudo bash iptables-blist/iptables-setup.sh
+sudo bash wireguard/wireguard-setup.sh
+sudo bash stats/stats-setup.sh
+sudo bash api/api-postgre-setup.sh
 sudo pm2 start /home/ubuntu/vpn-wireguard-server/api/api.js
 sudo pm2 save
 sudo pm2 startup
