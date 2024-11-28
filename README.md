@@ -10,8 +10,6 @@ A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu*
 - **Node.js** and **NPM**
 - **PostgreSQL**
 - **NodeExporter** (Monitoring)
-- **Prometheus** (Monitoring)
-- **Certbot** (SSL Certificate Management)
 - **Shell Scripts** and additional **Linux packages**
 
 ---
@@ -33,12 +31,11 @@ A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu*
 
 ---
 
-## Instructions
+## Instructions Before Setup
 
-The project files can be directly cloned and installed on a server.  
-**Note:** The order of script execution is critical and may cause issues if not followed correctly.  
-To avoid potential problems, Ansible playbooks have been included in the repository.  
-You can either use **Ansible** for remote installation and multi-server management or install manually as described below.
+**Edit environment.txt file**:
+$MAIN_DOMAIN: This variable is domain of server for VPN.
+$API_KEY: Add your API key.
 
 ---
 
@@ -48,14 +45,8 @@ Run the following commands in order:
 
 ```bash
 git clone https://github.com/special3543/vpn-wireguard-server.git
-cd 'path-to-repolocal' 
-sudo bash iptables-blist/iptables-setup.sh
-sudo bash wireguard/wireguard-setup.sh
-sudo bash stats/stats-setup.sh
-sudo bash api/api-postgre-setup.sh
-sudo pm2 start /home/ubuntu/vpn-wireguard-server/api/api.js
-sudo pm2 save
-sudo pm2 startup
+cd 'vpn-wireguard-server' 
+sudo bash deploy-all.sh
 ```
 
 ---
@@ -64,7 +55,7 @@ sudo pm2 startup
 ## Additional Notes
 
 - This setup uses PM2 for process management and logging. You can modify the code to use other tools or directly with Node.js if needed.
-- **Important**: This server setup is designed for scenarios where it is managed by a central server that collects and manages the scores of multiple servers. Using it without a domain or for other purposes may require additional customizations.
+- **Important**: If you have any issues, you can reach to me directly. Any contribution will be helpful.
 
 
 
