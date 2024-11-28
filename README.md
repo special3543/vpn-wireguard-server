@@ -54,6 +54,7 @@ sudo bash deploy-all.sh
 
 ## Additional Notes
 
+- Im developing this project still. So, dont be prejudiced.
 - This setup uses PM2 for process management and logging. You can modify the code to use other tools or directly with Node.js if needed.
 - **Important**: If you have any issues, you can reach to me directly. Any contribution will be helpful.
 
