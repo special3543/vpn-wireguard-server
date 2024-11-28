@@ -1,4 +1,4 @@
-# VPN WireGuard Server API
+# WireGuard VPN Server API
 
 A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu** systems with customizable features.
 
