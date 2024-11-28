@@ -34,7 +34,7 @@ A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu*
 ## Instructions Before Setup
 
 **Edit environment.txt file**:
-$MAIN_DOMAIN: This variable is domain of server for VPN.
+$MAIN_DOMAIN: This variable is domain of server for VPN.__
 $API_KEY: Add your API key.
 
 ---
@@ -54,9 +54,9 @@ sudo bash deploy-all.sh
 
 ## Additional Notes
 
-- Im developing this project still. So, dont be prejudiced.
-- This setup uses PM2 for process management and logging. You can modify the code to use other tools or directly with Node.js if needed.
-- **Important**: If you have any issues, you can reach to me directly. Any contribution will be helpful.
+- Im developing this project still. So, dont be prejudiced.__
+- This setup uses PM2 for process management and logging. You can modify the code to use other tools or directly with Node.js if needed.__
+- **Important**: If you have any issues, you can reach to me directly. Any contribution will be helpful.__
 
 
 
