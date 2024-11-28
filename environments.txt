@@ -1,0 +1,2 @@
+SERVER_DOMAIN=xxxx.vpnxxx.com
+API_KEY=xxxxxxxx
