@@ -39,7 +39,7 @@ $API_KEY: Add your API key.
 
 <br /><br />
 
-## How to Setup (For Non-Ansible Users)
+## How to Setup
 
 Run the following commands in order:
 
