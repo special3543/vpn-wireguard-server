@@ -19,7 +19,7 @@ A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu*
 - **Configurable Quotas**: Allows setting data usage quotas for clients.  
 - **Premium Support**: Includes features for premium clients with customizable quota settings.  
 - **Endpoints**:  
-  - **/connect**: Handles client connection requests.  
+  - **/connect**: Returns wireguard config file to user.  
   - **/clear**: Resets all VPN connections without reconfiguring the server or manually managing WireGuard.
 
 <br /><br />
