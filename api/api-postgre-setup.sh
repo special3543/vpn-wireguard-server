@@ -34,7 +34,7 @@ SERVER_PUBKEY=$(wg show ${SERVER_WG_INTERFACE} public-key)
 SERVER_PORT=51630
 
 # .env dosyası oluştur
-ENV_PATH="$PROJECT_PATH/bozvpn-server/api/.env"
+ENV_PATH="$PROJECT_PATH/api/.env"
 
 # Eğer dosya varsa sil
 [ -f "$ENV_PATH" ] && rm "$ENV_PATH"
@@ -53,9 +53,9 @@ DB_PASS="wireguard_xvpnpass"
   echo "SERVER_PORT=\"$SERVER_PORT\""
   echo "CERTBOT_PRIVKEY_PATH=\"/etc/letsencrypt/live/$SERVER_DOMAIN/privkey.pem\""
   echo "CERTBOT_FULLCHAIN_PATH=\"/etc/letsencrypt/live/$SERVER_DOMAIN/fullchain.pem\""
-  echo "SPEED_LIMITER_SH_PATH=\"$PROJECT_PATH/bozvpn-server/api/speed-limiter.sh\""
-  echo "CLEAR_ALL_IP_SH_PATH=\"$PROJECT_PATH/bozvpn-server/api/clear-all-speed.sh\""
-  echo "CLEAR_IP_SH_PATH=\"$PROJECT_PATH/bozvpn-server/api/clear-ip.sh\""
+  echo "SPEED_LIMITER_SH_PATH=\"$PROJECT_PATH/api/speed-limiter.sh\""
+  echo "CLEAR_ALL_IP_SH_PATH=\"$PROJECT_PATH/api/clear-all-speed.sh\""
+  echo "CLEAR_IP_SH_PATH=\"$PROJECT_PATH/api/clear-ip.sh\""
   echo "DATABASE_URL=\"postgresql://${DB_USER}:${DB_PASS}@localhost:5432/${DB_NAME}\""
 } > $ENV_PATH
 
@@ -83,8 +83,8 @@ EOF
 # PM2 global kurulum
 sudo npm install -g pm2
 
-# $PROJECT_PATH/bozvpn-server/api klasörü içindeki npm paketlerini kur
-cd $PROJECT_PATH/bozvpn-server/api
+# $PROJECT_PATH/api klasörü içindeki npm paketlerini kur
+cd $PROJECT_PATH/api
 npm init -y
 
 # api için gerekli kütüphaneler
