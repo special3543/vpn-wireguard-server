@@ -33,7 +33,7 @@ A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu*
 
 ## Instructions Before Setup
 
-**Edit environment.txt file**:
+**Edit environment.txt file**:<br />
 $MAIN_DOMAIN: This variable is domain of server for VPN.<br />
 $API_KEY: Add your API key.
 
