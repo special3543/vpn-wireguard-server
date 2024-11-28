@@ -2,7 +2,7 @@
 
 A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu** systems with customizable features.
 
----
+<br /><br />
 
 ## Main Modules
 
@@ -12,7 +12,7 @@ A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu*
 - **NodeExporter** (Monitoring)
 - **Shell Scripts** and additional **Linux packages**
 
----
+<br /><br />
 
 ## Features
 
@@ -23,23 +23,23 @@ A **VPN Server API** built on the **WireGuard protocol**. Designed for **Ubuntu*
   - **/connect**: Handles client connection requests.  
   - **/clear**: Resets all VPN connections without reconfiguring the server or manually managing WireGuard.
 
----
+<br /><br />
 
 ## Planned Features
 
 - **Blacklist Support**: Add a feature to block specific users or IPs from accessing the VPN server.
 
----
+<br /><br />
 
 ## Instructions Before Setup
 
-**Edit environment.txt file**:
-$MAIN_DOMAIN: This variable is domain of server for VPN.
+**Edit environment.txt file**:<br />
+$MAIN_DOMAIN: This variable is domain of server for VPN.<br />
 $API_KEY: Add your API key.
 
----
+<br /><br />
 
-## How to Setup (For Non-Ansible Users)
+## How to Setup
 
 Run the following commands in order:
 
@@ -48,14 +48,14 @@ git clone https://github.com/special3543/vpn-wireguard-server.git
 cd 'vpn-wireguard-server' 
 sudo bash deploy-all.sh
 ```
-
----
+<br />
 
 
 ## Additional Notes
 
+- Im developing this project still. So, dont be prejudiced.
 - This setup uses PM2 for process management and logging. You can modify the code to use other tools or directly with Node.js if needed.
-- **Important**: If you have any issues, you can reach to me directly. Any contribution will be helpful.
+- **Important**: If you have any issues, you can reach to me directly. Any contribution will be helpful.<br /><br /><br />
 
 
 
